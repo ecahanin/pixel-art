@@ -15,8 +15,8 @@ def get_prob_colors(start, end, i):
     return colors
 
 CANVAS_SIZE = (4500, 5400)
-PIXEL_SIZE = 50
-WIDTH = 70
+PIXEL_SIZE = 60
+WIDTH = 60
 HEIGHT = 20
 GAP = 9
 TOP_BUFFER = 500
@@ -37,7 +37,7 @@ COLORS = [
             (115,68,41),
         ]
 
-image = Image.new("RGB", CANVAS_SIZE, (255,255,255,0))
+image = Image.new("RGBA", CANVAS_SIZE, (255,255,255,0))
 draw = ImageDraw.Draw(image)
 
 image_width = PIXEL_SIZE * WIDTH + (WIDTH - 1) * GAP
